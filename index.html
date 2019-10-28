@@ -5,8 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>GIPHY API</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"                  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>   
 </head>
 <body>
-    
+
+    <div id="container">
+        <div id="buttons-view"></div>
+        
+        <input id="add-animal" type="submit" value="Show Favorites" class="bg-info text-white mt-2" >
+
+        <hr>
+
+        <div class="row">
+            <div class="col-10">
+                <div id="animals-view">
+
+                </div>
+            </div>
+            <div class="col-2">
+                <form id="form">
+                    <label for="animal-input" class="font-weight-bold">Add an animal</label>
+                    <br>
+                    <input type="text" id="animal-input">
+                    <br>
+                    <input id="add-animal" type="submit" value="Submit" class="bg-info text-white mt-2" >
+                </form>
+            </div>
+        </div>
+    </div>
+
+  
 </body>
 </html>
