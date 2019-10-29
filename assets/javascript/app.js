@@ -39,8 +39,7 @@ $(document).ready(function() {
         }).then(function (response) {
             var response = response.data;
             console.log(response);
-            $("#animals-view").empty();
-            for (var i = 0; i < response.length; i++) { //NOT overwrite the existing gifs.
+            for (var i = 0; i < response.length; i++) { 
                 var animalDiv = $("<div>");
                 var p = $("<p>").text("Rating:" + response[i].rating);
                 var animalImg = $("<img>");
@@ -53,7 +52,7 @@ $(document).ready(function() {
                 animalImg.addClass("gif-img");
                 animalDiv.append(p);
                 animalDiv.append(animalImg);
-                $("#animals-view").append(animalDiv);
+                $("#animals-view").prepend(animalDiv);
             }
         });
     });
